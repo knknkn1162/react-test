@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom";
 
 //import Hello from "./components/Hello";
 // Note that Hello component is the object that returns connect(mapStateToProps, mapDispatchToProps)(Hello);
-import Hello from './containers/Hello';
+import {NewHello} from './containers/Hello';
 import { Provider } from 'react-redux';
 
 /*
@@ -25,7 +25,7 @@ const store = createStore<StoreState>(enthusiasm, {
 
 ReactDOM.render(
   <Provider store={store}>
-    <Hello />
+    <NewHello />
   </Provider>,
   document.getElementById('example') as HTMLElement
 );

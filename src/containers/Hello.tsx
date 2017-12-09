@@ -17,5 +17,7 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction>)
   }
 }
 
-// if not, containers/Hello"' has no default export.
-export default connect(mapStateToProps, mapDispatchToProps)(Hello);
+// if not, TS1192: Module '"./src/containers/Hello"' has no default export.
+// export default connect(mapStateToProps, mapDispatchToProps)(Hello); 
+// in ./index.tsx, `import Hello from './containers/Hello';` instead
+export const NewHello = connect(mapStateToProps, mapDispatchToProps)(Hello);
