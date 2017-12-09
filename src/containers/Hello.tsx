@@ -17,4 +17,5 @@ export function mapDispatchToProps(dispatch: Dispatch<actions.EnthusiasmAction>)
   }
 }
 
+// if not, containers/Hello"' has no default export.
 export default connect(mapStateToProps, mapDispatchToProps)(Hello);
